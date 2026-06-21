@@ -1,6 +1,7 @@
 import ProductCard from "@/components/ProductCard/ProductCard";
+import type { Product } from "@/src/types/product";
 
-const products = [
+const products: Product[] = [
   {
     id: 1,
     name: "Batata Suprema",
@@ -23,13 +24,11 @@ const products = [
 
 export default function Home() {
   return (
-    <main>
+    <main className="p-6">
       {products.map((product) => (
         <ProductCard 
           key={product.id}
-          name={product.name}
-          price={product.price}
-          avaliable={product.avaliable}
+          product={product}
         />
       ))}
     </main>

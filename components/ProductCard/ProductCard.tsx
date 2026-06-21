@@ -1,21 +1,19 @@
+import type { Product } from "@/src/types/product";
+
 type ProductCardProps = {
-  name: string;
-  price: number;
-  avaliable: boolean;
+  product: Product;
 };
 
 export default function ProductCard({
-  name,
-  price,
-  avaliable,
+  product,
 }: ProductCardProps) {
   return (
     <div className="border rouded-lg p-4 mb-4">
-      <h2 className="text-xl font-bold">{name}</h2>
+      <h2 className="text-xl font-bold">{product.name}</h2>
 
-      <p className="mt-2">R$ {price}</p>
+      <p className="mt-2">R$ {product.price}</p>
 
-      <p className="mt-2">{avaliable ? "Disponível" : "Indisponível"}</p>
+      <p className="mt-2">{product.avaliable ? "Disponível" : "Indisponível"}</p>
     </div>
   );
 }
