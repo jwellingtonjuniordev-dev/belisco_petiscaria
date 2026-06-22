@@ -1,4 +1,4 @@
-import type { Product } from "@/src/types/product";
+import type { Product } from "@/types/product";
 
 type ProductCardProps = {
   product: Product;
