@@ -1,5 +1,5 @@
-import Link from "next/link";
 import Image from "next/image";
+import Button from "@/components/Button/Button";
 
 export default function Hero() {
   return (
@@ -19,26 +19,18 @@ export default function Hero() {
         </p>
 
         <div className="mt-6 flex flex-col gap-3 sm:flex-row sm:justify-center md:justify-start">
-          <Link
-            href="/cardapio"
-            className="rounded-full bg-orange-500 px-6 py-3 text-sm font-semibold text-white transition hover:bg-orange-600"
-          >
-            Ver Cardápio
-          </Link>
+          <Button href="/cardapio">Ver Cardápio</Button>
 
-          <Link
-            href="/cardapio"
-            className="rounded-full border border-orange-500 px-6 py-3 text-sm font-semibold text-orange-600 transition hover:bg-orange-50"
-          >
+          <Button href="/cardapio" variant="secondary">
             Fazer Pedido
-          </Link>
+          </Button>
         </div>
       </div>
 
       <figure className="flex flex-1 justify-center">
         <div className="overflow-hidden rounded-3xl shadow-xl">
           <Image
-            src="/images/belisco.jpeg"
+            src="/images/belisco_sem_bg.png"
             alt="Porção de batata frita servida pela Belisco"
             width={520}
             height={520}
