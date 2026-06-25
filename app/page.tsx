@@ -7,11 +7,12 @@ export default function Home() {
   return (
     <>
       <Header />
-      <main className="p-6">
-        <Hero />
 
+      <main>
+        <Hero />
         <ProductList />
       </main>
+
       <Footer />
     </>
   );

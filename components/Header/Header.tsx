@@ -1,17 +1,24 @@
-import Navbar from "../Navbar/Navbar"
+import Link from "next/link";
+import Navbar from "@/components/Navbar/Navbar";
+import CartButton from "@/components/CartButton/CartButton";
 
 export default function Header() {
-    return (
-        <header className="border-b">
-            <div className="max-w-6x1 mx-auto px-4 py-4">
-                <div className="flex items-center justify-between">
-                    <h1 className="text-2x1 font-bold">
-                        Belisco
-                    </h1>
+  return (
+    <header className="sticky top-0 z-50 border-b border-zinc-200 bg-white/95 backdrop-blur">
+      <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-4">
+        <Link
+          href="/"
+          className="text-2xl font-extrabold tracking-tight text-zinc-900"
+        >
+          BELISCO
+        </Link>
 
-                    <Navbar />    
-                </div>   
-            </div>
-        </header>
-    );
+        <div className="hidden md:block">
+          <Navbar />
+        </div>
+
+        <CartButton />
+      </div>
+    </header>
+  );
 }
