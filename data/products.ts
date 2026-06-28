@@ -8,7 +8,7 @@ export const products: Product[] = [
     image: "/images/batata-suprema.png",
     category: "Acompanhamentos",
     price: 35,
-    avaliable: true,
+    available: true,
   },
   {
     id: 2,
@@ -17,7 +17,7 @@ export const products: Product[] = [
     image: "/images/calabresa-acebolada.png",
     category: "Pratos Principais",
     price: 28,
-    avaliable: true,
+    available: true,
   },
   {
     id: 3,
@@ -26,15 +26,15 @@ export const products: Product[] = [
     image: "/images/frango-a-passarinho.png",
     category: "Pratos Principais",
     price: 32,
-    avaliable: false,
+    available: false,
   },
   {
     id: 4,
     name: "Super Picanha",
     description: "Picanha grelhada com molho especial",
-    image: "/images/super-picanha.png",
+    image: "/images/picanha-com-batata.png",
     category: "Pratos Principais",
     price: 45,
-    avaliable: true,
+    available: true,
   },
 ];

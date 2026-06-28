@@ -5,5 +5,5 @@ export type Product = {
   image: string;
   category: string;
   price: number;
-  avaliable: boolean;
+  available: boolean;
 };
